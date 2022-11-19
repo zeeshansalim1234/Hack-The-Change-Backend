@@ -1,9 +1,9 @@
-from firebase_admin import credentials, initialize_app, firestore
+#from firebase_admin import credentials, initialize_app, firestore
 from flask import Flask, Blueprint, request, jsonify, render_template, redirect, url_for
 from flask_cors import CORS
 
-db = firestore.client()
-user_Ref = db.collection('user')
+#db = firestore.client()
+#user_Ref = db.collection('user')
 
 app = Flask(__name__)
 CORS(app)
