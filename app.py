@@ -26,6 +26,10 @@ def isRecyclable():
     if int(barcode)%2==0:
         val = True
     return jsonify({'result':val})
+
+@app.route('/checkFoodData', methods = ['GET'])
+def checkFoodData():
+    return jsonify({'result':'YO'})
     
 if __name__ == "__main__":
     app.run(debug=True)
