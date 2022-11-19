@@ -19,6 +19,14 @@ def sample():
     test = {"name": "Zeeshan"}
     return jsonify(test)
 
+@app.route('/isRecyclable', methods = ['GET'])
+def isRecyclable():
+    val = False
+    barcode = request.args.get('barcode')
+    if int(barcode)%2==0:
+        val = True
+    return jsonify({'result':val})
+    
 if __name__ == "__main__":
     app.run(debug=True)
     
