@@ -631,13 +631,6 @@ $(function() {
             ],
             color: '#e62739'
         },
-        {
-            label: "Series 5",
-            data: [
-                [1, 30]
-            ],
-            color: '#173e43'
-        }
     ];
 
     $.plot('#flotPie1', piedata, {
