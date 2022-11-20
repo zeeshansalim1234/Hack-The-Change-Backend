@@ -6,18 +6,18 @@
       nextScreen: function() {
         if (this.index < this.indexMax()) {
           this.index++;
-          return this.updateScreen();
+          return this.resetDot() && this.updateScreen();
         }
       },
       prevScreen: function() {
         if (this.index > 0) {
           this.index--;
-          return this.updateScreen();
+          return this.resetDot() &&this.updateScreen();
         }
       },
       refreshScreen: function() {
           this.index = this.index + 2;
-          return this.updateScreen();
+          return this.updateScreen() &&  $('.dot').eq(this.index).removeClass('active');
       
       },
       back: function() {
@@ -35,9 +35,8 @@
         $prevBtn = $('.prev-screen');
         $backBtn = $('.back');
         $refreshbtn = $('.refresh-screen');
-    
         $lastBtn = $('.finish');
-        $backBtn = $('.back');
+
         if (walkthrough.index === walkthrough.indexMax()) {
           $nextBtn.prop('disabled', true);
           $prevBtn.prop('disabled', false);
@@ -56,8 +55,11 @@
         $('.screen').eq(index).addClass('active');
         return $('.dot').eq(index).addClass('active');
       },
+      resetDot: function() {
+        return $('.dot').removeClass('active')
+      },
       reset: function() {
-        return $('.screen, .dot').removeClass('active');
+        return $('.screen').removeClass('active');
       },
       indexMax: function() {
         return $('.screen').length - 1;
