@@ -10,6 +10,8 @@ CORS(app)
 
 key = os.environ.get('GOOGLE_KEY')
 
+#comment
+
 @app.route('/', methods = ['GET'])
 def input():
     #url = "https://www.google.com/maps/embed/v1/search?key=key&q=recycle+depot+in+calgary"
