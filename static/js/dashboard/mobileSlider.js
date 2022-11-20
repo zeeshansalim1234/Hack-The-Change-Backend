@@ -16,12 +16,12 @@
         }
       },
       refreshScreen: function() {
-          this.index = this.index + 5;
+          this.index = this.index + 2;
           return this.updateScreen();
       
       },
       back: function() {
-        this.index = this.index - 5;
+        this.index = this.index - -2;
         return this.updateScreen();
       },
       updateScreen: function() {
