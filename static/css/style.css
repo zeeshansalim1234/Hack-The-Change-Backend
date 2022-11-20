@@ -11322,7 +11322,7 @@ table.dataTable thead .sorting::after {
     font-weight: 500;
     line-height: 18px;
   overflow: hidden;
-white-space: nowrap; }
+white-space: hidden; }
   .card-header {
     border-bottom: 0px;
     background: transparent; }
@@ -14842,7 +14842,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .walkthrough .walkthrough-footer button {
     height: 40px;
     border: 0;
-    background: #5da3f2;
+    background: #b55cc7;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.15em;
