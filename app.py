@@ -1,17 +1,19 @@
 #from firebase_admin import credentials, initialize_app, firestore
 from flask import Flask, Blueprint, request, jsonify, render_template, redirect, url_for
 from flask_cors import CORS
-
 #db = firestore.client()
 #user_Ref = db.collection('user')
+import os 
 
 app = Flask(__name__)
 CORS(app)
 
+key = os.environ.get('GOOGLE_KEY')
+
 @app.route('/', methods = ['GET'])
 def input():
-
-    return render_template('index.html')
+    map = "https://www.google.com/maps/embed/v1/search?key="+key+"&q=recycle+depot+in+calgary"
+    return render_template('index.html', map = map)
 
 @app.route('/getSample', methods = ['GET'])
 def sample():
