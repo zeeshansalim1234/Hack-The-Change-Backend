@@ -29,10 +29,10 @@ def sample():
 @app.route('/isRecyclable', methods = ['GET'])
 def isRecyclable():
     
-    val = False
+    val = 0
     barcode = request.args.get('barcode')
     if barcode == "0067000004629":
-        val = True
+        val = 1
     #val = calculateRebateOnAnItem(barcode)
     return jsonify({'result':val})
 
