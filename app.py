@@ -15,6 +15,11 @@ def input():
     #url = "https://www.google.com/maps/embed/v1/search?key=key&q=recycle+depot+in+calgary"
     return render_template('index.html')
 
+@app.route('/test', methods = ['GET'])
+def test():
+    #url = "https://www.google.com/maps/embed/v1/search?key=key&q=recycle+depot+in+calgary"
+    return jsonify(key)
+
 @app.route('/getSample', methods = ['GET'])
 def sample():
 
