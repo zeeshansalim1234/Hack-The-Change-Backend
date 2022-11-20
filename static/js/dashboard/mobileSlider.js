@@ -15,17 +15,29 @@
           return this.updateScreen();
         }
       },
+      refreshScreen: function() {
+          this.index = this.index + 5;
+          return this.updateScreen();
+      
+      },
+      back: function() {
+        this.index = this.index - 5;
+        return this.updateScreen();
+      },
       updateScreen: function() {
         this.reset();
         this.goTo(this.index);
         return this.setBtns();
       },
       setBtns: function() {
-        var $lastBtn, $nextBtn, $prevBtn, $refreshbtn;
+        var $lastBtn, $nextBtn, $prevBtn, $refreshbtn, $backBtn;
         $nextBtn = $('.next-screen');
         $prevBtn = $('.prev-screen');
+        $backBtn = $('.back');
+        $refreshbtn = $('.refresh-screen');
     
         $lastBtn = $('.finish');
+        $backBtn = $('.back');
         if (walkthrough.index === walkthrough.indexMax()) {
           $nextBtn.prop('disabled', true);
           $prevBtn.prop('disabled', false);
@@ -79,8 +91,14 @@
     $('.close').click(function() {
       return walkthrough.closeModal();
     });
+    $('.back').click(function() {
+      return walkthrough.back();
+    });
     $('.open-walkthrough').click(function() {
       return walkthrough.openModal();
+    });
+    $('.refresh-screen').click(function() {
+      return walkthrough.refreshScreen();
     });
     walkthrough.openModal();
     return $(document).keydown(function(e) {
