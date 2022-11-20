@@ -604,35 +604,28 @@ $(function() {
 
     /**************** PIE CHART *******************/
     var piedata = [{
-            label: "Series 1",
+            label: "Compost Bin",
+            data: [
+                [1, 23]
+            ],
+            color: '#F29D56'
+        },
+        {
+            label: "Recyclable Bin",
             data: [
                 [1, 50]
             ],
-            color: '#e1e8f0'
+            color: '#65D96F'
         },
         {
-            label: "Series 2",
-            data: [
-                [1, 90]
-            ],
-            color: '#7571F9'
-        },
-        {
-            label: "Series 3",
-            data: [
-                [1, 50]
-            ],
-            color: '#ff5e5e'
-        },
-        {
-            label: "Series 4",
+            label: "Non-Recyclable Bin",
             data: [
                 [1, 70]
             ],
-            color: '#e62739'
+            color: '#FF5E5E'
         },
         {
-            label: "Series 5",
+            label: "Rebatable Bin",
             data: [
                 [1, 30]
             ],

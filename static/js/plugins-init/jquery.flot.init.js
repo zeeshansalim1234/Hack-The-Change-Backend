@@ -611,13 +611,6 @@ $(function() {
             color: '#e1e8f0'
         },
         {
-            label: "Series 2",
-            data: [
-                [1, 90]
-            ],
-            color: '#6ed3cf'
-        },
-        {
             label: "Series 3",
             data: [
                 [1, 50]
