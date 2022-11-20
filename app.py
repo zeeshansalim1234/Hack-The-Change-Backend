@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-key = os.environ.get('GOOGLE_KEY')
+key = "AIzaSyB9f1GCOB0WSYtPzqceTq8Q_OwCp5tA2oc"
 
 #comment
 
