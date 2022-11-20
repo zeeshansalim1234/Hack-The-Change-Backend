@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-key = "AIzaSyB9f1GCOB0WSYtPzqceTq8Q_OwCp5tA2oc"
+key = ""
 
 #comment
 
