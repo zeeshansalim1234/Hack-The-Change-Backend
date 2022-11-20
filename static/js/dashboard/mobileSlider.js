@@ -21,7 +21,7 @@
       
       },
       back: function() {
-        this.index = this.index - -2;
+        this.index = this.index - 2;
         return this.updateScreen();
       },
       updateScreen: function() {
