@@ -31,7 +31,7 @@ def isRecyclable():
     
     val = 0
     barcode = request.args.get('barcode')
-    if barcode == "0067000004629":
+    if barcode == "067000004629":
         val = 1
     #val = calculateRebateOnAnItem(barcode)
     return jsonify({'result':val})
