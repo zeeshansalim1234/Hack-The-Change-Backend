@@ -14742,6 +14742,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .walkthrough.reveal {
     opacity: 1;
     transform: translateY(0);
+    margin: auto;
 }
 .walkthrough .walkthrough-body {
     align-items: center;
