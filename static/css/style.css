@@ -15022,3 +15022,12 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .walkthrough .screens .screen.active .media.comm .status-badge {
     transition-delay: 1.6s;
 }
+
+.test{
+  
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+
+}
