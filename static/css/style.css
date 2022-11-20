@@ -15034,3 +15034,9 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   padding: 10px;
 
 }
+
+.walkthrough .walkthrough-body .below {
+  position:relative;
+  bottom: 0;
+  white-space: nowrap;
+}
